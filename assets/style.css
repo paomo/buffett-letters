@@ -150,6 +150,68 @@ body {
   margin-bottom: 0.5rem;
 }
 
+/* Era context block */
+.era-context {
+  background: #f0f4f8;
+  border: 1px solid #d6dee6;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 2.5rem;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  color: #34495e;
+}
+.era-context h3 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #0B2E5C;
+  margin-bottom: 0.5rem;
+}
+.era-context .ctx-row {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+.era-context .ctx-label {
+  font-weight: 600;
+  color: #0B2E5C;
+  min-width: 5rem;
+  flex-shrink: 0;
+}
+
+/* Year summary */
+.year-summary {
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  background: #f5f7fa;
+  border-radius: 8px;
+  border-left: 4px solid #0B2E5C;
+}
+.year-summary h3 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #0B2E5C;
+  margin-bottom: 0.5rem;
+}
+.year-summary ul {
+  list-style: none;
+  padding: 0;
+}
+.year-summary li {
+  padding: 0.25rem 0;
+  font-size: 0.875rem;
+  color: #34495e;
+}
+.year-summary li::before {
+  content: "▸ ";
+  color: #0B2E5C;
+  font-weight: 700;
+}
+
 /* Footer */
 .site-footer {
   text-align: center;
