@@ -1,0 +1,195 @@
+/* ===== Reset & Base ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #2c3e50;
+  background: #fafafa;
+  line-height: 1.8;
+}
+
+/* ===== Header ===== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #0B2E5C;
+  color: #fff;
+  padding: 0.625rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+}
+.site-header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.site-header .logo {
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+
+/* ===== Container ===== */
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+/* ===== Homepage ===== */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+.hero h1 {
+  font-size: 1.8rem;
+  color: #0B2E5C;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.hero .subtitle {
+  font-size: 0.95rem;
+  color: #7f8c8d;
+  font-style: italic;
+}
+.hero .desc {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #95a5a6;
+}
+
+.year-list {
+  list-style: none;
+  margin-top: 2rem;
+}
+.year-list li {
+  border-bottom: 1px solid #ecf0f1;
+}
+.year-list a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0.9rem 0.5rem;
+  text-decoration: none;
+  color: #2c3e50;
+  transition: background 0.15s;
+}
+.year-list a:hover {
+  background: #f0f4f8;
+  padding-left: 1rem;
+}
+.year-list .year-num {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #0B2E5C;
+}
+.year-list .year-label {
+  font-size: 0.8rem;
+  color: #95a5a6;
+}
+
+/* Era group headers */
+.era-header {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #0B2E5C;
+  padding: 1.5rem 0.5rem 0.5rem;
+  border-bottom: 2px solid #0B2E5C;
+  margin-top: 0.5rem;
+}
+
+/* ===== Letter Page ===== */
+.letter-header {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+.letter-header h2 {
+  font-size: 1.5rem;
+  color: #0B2E5C;
+  margin-bottom: 0.3rem;
+}
+.letter-header .meta {
+  font-size: 0.85rem;
+  color: #95a5a6;
+}
+
+/* English original paragraph */
+.en-text {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.0625rem;
+  line-height: 1.9;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  text-align: justify;
+}
+
+/* Chinese commentary block */
+.cn-commentary {
+  background: #f5f7fa;
+  border-left: 4px solid #0B2E5C;
+  padding: 1rem 1.25rem;
+  margin: 0.5rem 0 2rem;
+  font-size: 0.9375rem;
+  line-height: 1.85;
+  color: #34495e;
+  border-radius: 0 6px 6px 0;
+}
+.cn-commentary strong {
+  color: #0B2E5C;
+}
+
+/* Paragraph separator */
+.paragraph-block {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.8rem;
+  color: #bdc3c7;
+}
+.site-footer a {
+  color: #0B2E5C;
+  text-decoration: none;
+}
+
+/* Nav between years */
+.year-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ecf0f1;
+}
+.year-nav a {
+  color: #0B2E5C;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.year-nav .disabled {
+  color: #ccc;
+  pointer-events: none;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  .container { padding: 1.5rem 1rem 3rem; }
+  .hero h1 { font-size: 1.4rem; }
+  .en-text { font-size: 1rem; }
+  .cn-commentary {
+    font-size: 0.875rem;
+    padding: 0.75rem 1rem;
+  }
+  .site-header { padding: 0.5rem 0.75rem; }
+  .site-header .logo { font-size: 0.9rem; }
+}
