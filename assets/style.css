@@ -212,6 +212,42 @@ body {
   font-weight: 700;
 }
 
+/* Section headings within letter */
+.section-heading {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0B2E5C;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #d6dee6;
+}
+
+/* Table/preformatted data */
+.table-data {
+  font-family: "Courier New", monospace;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  background: #f8f9fb;
+  border: 1px solid #e0e4e8;
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 1rem 0 2rem;
+  color: #2c3e50;
+}
+
+/* Signature lines */
+.signature {
+  font-style: italic;
+  text-align: right;
+  margin-top: 2rem;
+  color: #0B2E5C;
+}
+
 /* Footer */
 .site-footer {
   text-align: center;
