@@ -100,6 +100,7 @@
 概念清单（持续更新）：
 - `dual-engine` - 双引擎策略（低估+套利），1957
 - `four-categories` - 四类投资框架，1965
+- `social-inflation` - 社会通胀（责任扩张/诉讼倾向/巨额判决），1975
 - `roe-benchmark` - ROE基准（非EPS），1977
 - `tailwind-headwind` - 顺风/逆风行业，1977
 - `non-control-advantage` - 不控股的控股，1977
