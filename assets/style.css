@@ -234,8 +234,7 @@ body {
   border-radius: 6px;
   padding: 1rem;
   overflow-x: auto;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+  white-space: pre;
   margin: 1rem 0 2rem;
   color: #2c3e50;
 }
