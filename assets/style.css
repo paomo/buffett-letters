@@ -290,3 +290,41 @@ body {
   .site-header { padding: 0.5rem 0.75rem; }
   .site-header .logo { font-size: 0.9rem; }
 }
+
+/* ===== Collapsible context detail ===== */
+.era-detail {
+  margin-top: 0.75rem;
+}
+.era-detail summary {
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: #0B2E5C;
+  font-weight: 600;
+  padding: 0.4rem 0;
+  user-select: none;
+  list-style: none;
+}
+.era-detail summary::before {
+  content: "▸ ";
+  font-size: 0.7rem;
+}
+.era-detail[open] summary::before {
+  content: "▾ ";
+}
+.era-detail[open] summary {
+  margin-bottom: 0.5rem;
+}
+.era-detail .detail-body {
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: #555;
+  padding: 0.5rem 0 0.5rem 1rem;
+  border-left: 2px solid #e0e4e8;
+}
+.era-detail .detail-body p {
+  margin: 0 0 0.4rem 0;
+}
+.era-detail .detail-body .event-date {
+  font-weight: 600;
+  color: #0B2E5C;
+}
